@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<html>
+<head>
+  <title>Email Validation</title>
+</head>
+<body>
+
+  	<h4>These are all Emails!</h4>
+  	{% for email in emails: %}
+  	<p>ID: {{ email['id']}}</p>
+  	<p>Email: {{ email['emailaddress'] }}</p>
+  	<p>Created_at: {{email['created_at']}}
+  	<a href="/remove_email/{{email['id']}}">Delete</a>
+  	<hr>
+  	{% endfor %}
+ 
+</body>
+</html>
+ 
